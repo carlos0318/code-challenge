@@ -1,0 +1,13 @@
+name: Run Tests in my project every push on GitHu
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-18.04
+    steps:
+      -name: checkout latest code
+       uses: actions/checkout@v2
+      -name: install dependencies
+       run: npm install
+      -name: Test
+       run: npm test
