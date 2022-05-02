@@ -7,4 +7,11 @@ describe("StudentsController", () => {
         const result = StudentsController.getAllStudents();
         expect(result).toEqual(data);
     });
+
+    test("getStudentsByHaveCertification", () => {
+        const result = StudentsController.getStudentsByHaveCertification();
+        expect(result).not.toBeUndefined();
+    });
+
+    
 });
