@@ -6,8 +6,8 @@
   "scripts": {
     "test": "jest",
     "start": "node index.js",
-    "eslint": "eslint --ext ./**/*.js",
-    "eslint-fix": "eslint --fix --ext ./**/*.js"
+    "eslint": "eslint ./**/*.js",
+    "eslint-fix": "eslint --fix ./**/*.js"
   },
   "keywords": [],
   "author": "",
