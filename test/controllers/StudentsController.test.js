@@ -13,5 +13,8 @@ describe("StudentsController", () => {
         expect(result).not.toBeUndefined();
     });
 
-    
+    test("getStudentsBy500Credits", () => {
+        const result = StudentsController.getStudentsBy500Credits();
+        expect(result).not.toBeUndefined();
+    });
 });
