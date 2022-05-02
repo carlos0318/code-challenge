@@ -8,4 +8,9 @@ describe("StudentService", () => {
         expect(students.length).toBe(5);
     });
 
+    test("getStudentsByHaveCertification", () => {
+        const data = Reader.readJsonFile("test/data/test.json");
+        const students = StudentService.getStudentsByHaveCertification(data);
+        expect(students.length).toBe(4);
+    });
 });
