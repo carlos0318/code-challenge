@@ -9,7 +9,7 @@ describe("StudentsController", () => {
     });
 
     test("getStudentsByHaveCertification", () => {
-        const result = StudentsController.getStudentsByHaveCertification();
+        const result = StudentsController.getAllEmail();
         expect(result).not.toBeUndefined();
     });
 
